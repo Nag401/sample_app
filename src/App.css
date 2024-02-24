@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+.home,
+.reports,
+.products {
+  height: 90vh;
+  margin: 1rem;
+}
+
+.flex {
+  display: flex;
+  background-color: #C4C3B9;
+
+}
+
+.display {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #A9A9A5;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.asidebar {
+  width: 6%;
+}
+
+.left_side_Content {
+  width: 100%;
+}
+
+.family-flex {
+  display: flex;
+}
+
+.testStyle {
+  /* display: flex;
+  margin-top: 10px;
+  margin-right: 15px; */
+}
+
+.width {
+  width: 150px;
+  margin-left: 10px;
+  border-radius: 5px;
+  background-color: #ffff;
+}
+.family{
+  margin-top: 10px;
+  margin-right: 10px;
+
+}
+.tab{
+  margin-top: 1rem;
+}
+.css-aym9vq-MuiButtonBase-root-MuiTab-root.Mui-selected{
+  background-color: #ffff;
+  color: black !important;
+}
+
+.HomePageContainer{
+  width: 100%;
+  display: flex;
+  background-color: #C4C3B9;
+}
+.naveBar{
+  width: 6%;
+  min-width: 90px;
+}
+.rightSideContent{
+  width: 100%;
+}
+.icon{
+margin-left: 19px;}
+.platFormName{
+  width: 100%;
+  background-color: #ffff;
+  padding: 2rem 4rem;
+}
+.serviceWithIconss{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 4rem 6rem;
+}
+.cordsStatus{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 3rem 6rem;
+}
+.popoverstyles{
+  width: 100% !important;
+}
+.css-3bmhjh-MuiPaper-root-MuiPopover-paper{
+  width: 85%;
+  background-color: #C4C3B9 !important;
+  padding: 2rem;
+}
