@@ -9,7 +9,7 @@ import DeleteIcon from '@mui/icons-material/Delete';
 function StatusCheck() {
   return (
     <div className='cordsStatus'>
-      <Card sx={{ minWidth: 275 }}>
+      <Card  className='cardStatus'>
         <CardContent>
           <Typography sx={{ mb: 1.5 }} color="text.secondary">
             <b>amazon athena</b>
@@ -19,12 +19,44 @@ function StatusCheck() {
           </Typography>
         </CardContent>
         <CardActions>
-          <Button variant="filledTonal" startIcon={<DeleteIcon />}>
+          <Button variant="filledTonal" className='btn_approved' startIcon={<DeleteIcon />}>
             Approved
           </Button>
         </CardActions>
       </Card>
-      <Card sx={{ minWidth: 275 }}>
+      <Card  className='cardStatus'>
+        <CardContent>
+          <Typography sx={{ mb: 1.5 }} color="text.secondary">
+            <b>amazon athena</b>
+          </Typography>
+          <Typography sx={{ mb: 1.5 }} color="text.secondary">
+            query data in s3 using Sql dsfsd khs dkf dsk fk dsk k
+          </Typography>
+        </CardContent>
+        <CardActions>
+          <Button variant="filledTonal" className='btn_approved' startIcon={<DeleteIcon />}>
+            Approved
+          </Button>
+        </CardActions>
+      </Card>
+      <Card  className='cardStatus'>
+        <CardContent>
+          <Typography sx={{ mb: 1.5 }} color="text.secondary">
+            <b>amazon athena</b>
+          </Typography>
+          <Typography sx={{ mb: 1.5 }} color="text.secondary">
+            query data in s3 using Sql dsfsd khs dkf dsk fk dsk k
+          </Typography>
+        </CardContent>
+        <CardActions>
+          <Button variant="filledTonal" className='btn_approved' startIcon={<DeleteIcon />}>
+            Approved
+          </Button>
+        </CardActions>
+      </Card>
+    
+    
+      <Card  className='cardStatus'>
         <CardContent>
           <Typography sx={{ mb: 1.5 }} color="text.secondary">
             <b>amazon athena</b>
@@ -34,72 +66,12 @@ function StatusCheck() {
           </Typography>
         </CardContent>
         <CardActions>
-          <Button variant="filledTonal" startIcon={<DeleteIcon />}>
+          <Button variant="filledTonal" className='btn_approved' startIcon={<DeleteIcon />}>
             Approved
           </Button>
         </CardActions>
       </Card>
-      <Card sx={{ minWidth: 275 }}>
-        <CardContent>
-          <Typography sx={{ mb: 1.5 }} color="text.secondary">
-            <b>amazon athena</b>
-          </Typography>
-          <Typography sx={{ mb: 1.5 }} color="text.secondary">
-            query data in s3 using Sql
-          </Typography>
-        </CardContent>
-        <CardActions>
-          <Button variant="filledTonal" color="tertiary" startIcon={<DeleteIcon />}>
-            Approved
-          </Button>
-          
-        </CardActions>
-      </Card>
-      <Card sx={{ minWidth: 275 }}>
-        <CardContent>
-          <Typography sx={{ mb: 1.5 }} color="text.secondary">
-            <b>amazon athena</b>
-          </Typography>
-          <Typography sx={{ mb: 1.5 }} color="text.secondary">
-            query data in s3 using Sql
-          </Typography>
-        </CardContent>
-        <CardActions>
-          <Button variant="filledTonal" startIcon={<DeleteIcon />}>
-            Approved
-          </Button>
-        </CardActions>
-      </Card>
-      <Card sx={{ minWidth: 275 }}>
-        <CardContent>
-          <Typography sx={{ mb: 1.5 }} color="text.secondary">
-            <b>amazon athena</b>
-          </Typography>
-          <Typography sx={{ mb: 1.5 }} color="text.secondary">
-            query data in s3 using Sql
-          </Typography>
-        </CardContent>
-        <CardActions>
-          <Button variant="filledTonal" startIcon={<DeleteIcon />}>
-            Approved
-          </Button>
-        </CardActions>
-      </Card>
-      <Card sx={{ minWidth: 275 }}>
-        <CardContent>
-          <Typography sx={{ mb: 1.5 }} color="text.secondary">
-            <b>amazon athena</b>
-          </Typography>
-          <Typography sx={{ mb: 1.5 }} color="text.secondary">
-            query data in s3 using Sql
-          </Typography>
-        </CardContent>
-        <CardActions>
-          <Button variant="filledTonal" startIcon={<DeleteIcon />}>
-            Approved
-          </Button>
-        </CardActions>
-      </Card>
+     
     </div>
   );
 }

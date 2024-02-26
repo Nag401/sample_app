@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Reports from './pages/Reports';
 import Products from './pages/Products';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <>

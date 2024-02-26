@@ -1,22 +1,20 @@
 import React from 'react';
 import GroupWorkIcon from '@mui/icons-material/GroupWork';
-import Popover from '@mui/material/Popover';
 import StatusCheck from './StatusCheck'
+import { useState, useRef } from 'react';
+import Overlay from 'react-bootstrap/Overlay';
+import Popover from 'react-bootstrap/Popover';
 
 function Platform() {
-
-  const [anchorEl, setAnchorEl] = React.useState(null);
+  const [show, setShow] = useState(false);
+  const [target, setTarget] = useState(null);
+  const ref = useRef(null);
 
   const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
+    setShow(!show);
+    setTarget(event.target);
   };
 
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
-
-  const open = Boolean(anchorEl);
-  const id = open ? 'simple-popover' : undefined;
   return (
     <div className='platFormName'>
       <div className='serviceWithIconss'>
@@ -27,7 +25,7 @@ function Platform() {
           </div>
         </div>
         <div className='serviceWithIcons'>
-          <GroupWorkIcon className='icon' sx={{ fontSize: 40 }} color="disabled" />
+          <GroupWorkIcon className='icon' sx={{ fontSize: 40 }} color="disabled" onClick={handleClick} />
           <div className='serviceName'>
             serviceName
           </div>
@@ -57,19 +55,21 @@ function Platform() {
           </div>
         </div>
       </div>
-
-      <Popover className='popoverstyles'
-        id={id}
-        open={open}
-        anchorEl={anchorEl}
-        onClose={handleClose}
-        anchorOrigin={{
-          vertical: 'bottom',
-          horizontal: 'left',
-        }}
+       <div ref={ref}>
+      <Overlay
+        show={show}
+        target={target}
+        placement="bottom"
+        container={ref}
+        containerPadding={130}
       >
-        <StatusCheck></StatusCheck>
-      </Popover>
+        <Popover id="popover-contained">
+          <Popover.Body>
+          <StatusCheck></StatusCheck>
+          </Popover.Body>
+        </Popover>
+      </Overlay>
+    </div>
 
     </div>
 

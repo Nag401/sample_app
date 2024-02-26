@@ -64,8 +64,12 @@
 .css-aym9vq-MuiButtonBase-root-MuiTab-root.Mui-selected{
   background-color: #ffff;
   color: black !important;
+  border-radius: 10px;
 }
 
+.css-1aquho2-MuiTabs-indicator{
+  background-color: none !important;
+}
 .HomePageContainer{
   width: 100%;
   display: flex;
@@ -92,14 +96,24 @@ margin-left: 19px;}
 }
 .cordsStatus{
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-gap: 3rem 6rem;
+  grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+  grid-gap: 1rem 2rem;
 }
-.popoverstyles{
-  width: 100% !important;
+.popover{
+max-width:91% !important;
+width: 100%;
+background-color: #C4C3B9 !important;
+padding: 1rem;
+margin-top: 2.2rem;
+
 }
-.css-3bmhjh-MuiPaper-root-MuiPopover-paper{
-  width: 85%;
-  background-color: #C4C3B9 !important;
-  padding: 2rem;
+.bs-popover-auto[data-popper-placement^=bottom]>.popover-arrow::after, .bs-popover-bottom>.popover-arrow::after{
+  border-bottom-color:#C4C3B9 !important;
+}
+.cardStatus{
+  position: relative;
+}
+.btn_approved{
+  position: absolute !important;
+  bottom: 0 !important;
 }
